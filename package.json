@@ -4,7 +4,8 @@
   "description": "Testable project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "startJSONServer": "json-server ./db/db.json",
+    "startWebpack": "npx webpack"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,18 @@
   "bugs": {
     "url": "https://github.com/bonnysid/web-shop-delivery-bob/issues"
   },
-  "homepage": "https://github.com/bonnysid/web-shop-delivery-bob#readme"
+  "homepage": "https://github.com/bonnysid/web-shop-delivery-bob#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "core-js": "^3.6.5",
+    "json-server": "^0.16.2",
+    "webpack": "^5.3.0",
+    "webpack-cli": "^4.1.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1"
+  }
 }
