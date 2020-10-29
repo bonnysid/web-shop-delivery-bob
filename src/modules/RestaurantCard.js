@@ -20,7 +20,7 @@ export default class CardRestaraunt {
 
     getHTML()  {
         this.html = !this.html ? this.html = `
-        <a href="restaurant.html" class="card card-restaurant">
+        <div href="restaurant.html" class="card card-restaurant">
             <img src=${this.image} data-products=${this.products} alt="image" class="card-image"/>
             <div class="card-text">
                 <div class="card-heading">
@@ -35,7 +35,7 @@ export default class CardRestaraunt {
                     <div class="category">${this.kitchen}</div>
                 </div>
             </div>
-        </a>
+        </div>
         ` : this.html
 
         return this.html;
